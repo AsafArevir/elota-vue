@@ -23,7 +23,7 @@
   <!-- Finaliza carrusel de imagenes -->
 
   <div class="container text-center mt-4">
-    <h1>Ejemplo objeto 3D con A-Frame</h1>
+    <h1>La Cruz del Perdón</h1>
     <div id="miContenedor" class="mt-4">
       <a-scene embedded>
 
