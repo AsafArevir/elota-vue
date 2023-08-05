@@ -1,0 +1,1462 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Inician Estilos en el NavBar */
+.navBar {
+    background-color: #141414;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1 rem;
+
+}
+
+.navColorLetras a {
+    color: #fff;
+}
+
+/*  Al precionar este se vuelva blanco*/
+.navbar-nav .nav-link:focus {
+    color: white !important;
+}
+
+.navColorLetras a:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navLogo {
+    width: 150px;
+}
+
+.dropdown-menu.navColorFondo {
+    background-color: #141414;
+}
+
+.dropdown-menu.navColorFondo :hover {
+    color: #000;
+    font-weight: 700;
+}
+
+.dropdown-menu.navColorFondo :focus {
+    background-color: white !important;
+}
+
+/* Terminan Estilos en el NavBar */
+
+
+/* Inicia lo que hay en el Header */
+
+/* Termina Header */
+
+
+/* Inicia la parte del main */
+.tituloInicio h1 {
+    text-align: center;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 3.2rem;
+
+}
+
+.contenedorCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 8%;
+}
+
+.cards {
+    width: 230px;
+    height: 300px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+}
+
+.cardsImgs {
+    background-image: url("img/imgInicio/caro1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.cardsImgs1 {
+    background-image: url("img/imgInicio/cards/presentacion5.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.cardsImgs2 {
+    background-image: url("img/imgInicio/caro1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.cardsImgs3 {
+    background-image: url("img/imgInicio/cards/presentacion5.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.cardsImgs4 {
+    background-image: url("img/imgInicio/caro1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.cardsImgs5 {
+    background-image: url("img/imgInicio/cards/presentacion5.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+
+}
+
+
+.cardsTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    /* Asegura que la altura de la tarjeta se ajuste correctamente */
+    transform: translateZ(30px);
+}
+
+.cardsTitulo h2 {
+    color: #fff;
+    font-weight: 700;
+
+}
+
+
+/* Empieza config para la rotacion de las tarjetas */
+
+.cards:hover .cardsImgs,
+.cards:hover .cardsImgs1,
+.cards:hover .cardsImgs2,
+.cards:hover .cardsImgs3,
+.cards:hover .cardsImgs4,
+.cards:hover .cardsImgs5 {
+    transform: rotateY(180deg);
+}
+
+.cardsImgs::before,
+.cardsImgs1::before,
+.cardsImgs2::before,
+.cardsImgs3::before,
+.cardsImgs4::before,
+.cardsImgs5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.cards:hover .cardsImgs::before {
+    background-image: url("img/imgInicio/cards/card1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.cards:hover .cardsImgs1::before {
+    background-image: url("img/imgInicio/cards/card1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.cards:hover .cardsImgs2::before {
+    background-image: url("img/imgInicio/cards/card1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.cards:hover .cardsImgs3::before {
+    background-image: url("img/imgInicio/cards/card1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.cards:hover .cardsImgs4::before {
+    background-image: url("img/imgInicio/cards/card1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.cards:hover .cardsImgs5::before {
+    background-image: url("img/imgInicio/cards/card1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+/* Termina configuracón de la rotacion de la card */
+
+/* Inicia codigo para las cards en la parte de atras */
+.cardsBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: rotateY(-180deg);
+    transition: opacity 1.4s ease;
+}
+
+.cards:hover .cardsBack {
+    opacity: 1;
+    transform: rotateY(0);
+    /* Rotarlo al reves */
+}
+
+.cardsLink a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.cardsLink a:hover {
+    background-color: #f79646;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* Termina codigo para las cards en la parte de atras */
+
+/* Termina el main  */
+
+
+/*-------------------------------------------Acontecimientos---------------------------------------------*/
+.foott {
+    background-color: black;
+}
+
+
+.lcarro {
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-size: 36px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.background-image {
+    background-image: url("img/imgAcontecimientos/artisticos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 62px;
+    font-family: Oswald;
+}
+
+.background-image-deportivos {
+    background-image: url("img/imgAcontecimientos/deportivos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+
+/*Imagenes de la deportivos*/
+
+.image-container {
+    text-align: center;
+}
+
+.image-big {
+    width: 600px;
+    /* Tamaño de la imagen grande */
+    height: auto;
+    /* Altura ajustada automáticamente */
+}
+
+.image-small {
+    width: 500px;
+    /* Tamaño de la imagen pequeña */
+    height: auto;
+    /* Altura ajustada automáticamente */
+}
+
+.image-text {
+    text-align: justify;
+    margin-top: 10px;
+    /* Espacio entre las imágenes y el texto */
+    font-size: 18px;
+}
+
+.background-image-deportivos2 {
+    background-image: url("img/imgAcontecimientos/deportivos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blancoLetras {
+    color: white;
+    text-align: center;
+
+}
+
+.background-image-otros {
+    background-image: url("img/imgAcontecimientos/otros.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+/**----------------------------------Termino de Acontecimientos----------------------------------*/
+
+/* --------------------------------Inicia pagina Folklore------------------------------------------------ */
+/* Inicia seccion manifestaciones */
+.background-image-arquitectura {
+    background-image: url("img/imgFolklore/imgArquitectura/imagenp1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.background-image-artesanias {
+    background-image: url("img/imgFolklore/imgArtes/imagena1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.background-image-comida {
+    background-image: url("img/imgFolklore/imgComidas/imagenc1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.background-image-ferias {
+    background-image: url("img/imgFolklore/imgFerias/imagenf1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.background-image-grupos {
+    background-image: url("img/imgFolklore/imgGrupos/imageng1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.background-image-manifestaciones {
+    background-image: url("img/imgFolklore/imgMani/turist1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.background-image-musica {
+    background-image: url("img/imgFolklore/imgMusica/imagenm1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+}
+
+.contaimerImgs img {
+    width: 392px;
+    height: 282px;
+}
+
+/* Termina seccion manifestaciones */
+
+/* Inicia seccion ferias y mercados */
+.containerImgf {
+    background: url("img/imgFolklore/imgFerias/imagenf1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-right: -116px;
+    margin-left: -117px;
+    position: relative;
+}
+
+.containerImgf h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImgf1 {
+    background: url("img/imgFolklore/imgFerias/imagenf2.jpg");
+    background-size: cover;
+    background-position: center;
+    /* height: 100%; */
+    width: 100%;
+    height: 391px;
+    border-radius: 3px;
+    /* margin-right: -20px;
+    margin-left: -20px; */
+    position: relative;
+}
+
+.containerImgf1 h2 {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgf2 {
+    background: url("img/imgFolklore/imgFerias/imagenf4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 434px;
+    height: 427px;
+    margin-left: 12px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.containerImgf2 h2 {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgf3 {
+    background: url("img/imgFolklore/imgFerias/imagenf3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 849px;
+    height: 427px;
+    margin-left: 15px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.containerImgf3 h2 {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgf4 img {
+    width: 612px;
+    height: 282px;
+}
+
+/* Termina seccion ferias y mercados */
+
+/* Inicia sección musica y danzas */
+.containerImgm {
+    background: url("img/imgFolklore/imgMusica/imagenm1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-left: -117px;
+    margin-right: -116px;
+    position: relative;
+}
+
+.containerImgm h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImgm1 {
+    background: url("img/imgFolklore/imgMusica/imagenm2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    width: 492px;
+    height: 382px;
+    margin-left: 70px;
+    position: relative;
+}
+
+.containerImgm1 h2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImgm2 {
+    background-image: url("img/imgFolklore/imgMusica/imagenm3.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    width: 492px;
+    height: 382px;
+    margin-left: 70px;
+    position: relative;
+}
+
+.containerImgm2 h2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Termina sección musica y danzas */
+
+/* Inicia sección artesanias */
+.containerImga {
+    background: url("img/imgFolklore/imgArtes/imagena1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-right: -116px;
+    margin-left: -117px;
+    position: relative;
+}
+
+.containerImga h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImga1 img {
+    background-size: cover;
+    background-position: center;
+    /* height: 100%; */
+    width: 362px;
+    height: 272px;
+    border-radius: 52px;
+    /* margin-right: -20px;
+    margin-left: -20px; */
+    position: relative;
+}
+
+.containerImga2 img {
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    height: 327px;
+    margin-left: 12px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.parrafo p {
+    margin-left: 35px;
+    margin-right: 45px;
+}
+
+/* Termina seccion artesanias */
+
+/* Inicia sección comidas */
+.containerImgc {
+    background: url("img/imgFolklore/imgComidas/imagenc1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-right: -116px;
+    margin-left: -117px;
+    position: relative;
+}
+
+.containerImgc h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImgc1 {
+    background: url("img/imgFolklore/imgComidas/imagenc2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 840px;
+    height: 427px;
+    margin-left: 12px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.containerImgc1 h2 {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgc2 {
+    background: url("img/imgFolklore/imgComidas/imagenc3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 442px;
+    height: 427px;
+    border-radius: 3px;
+    margin-left: -25px;
+    position: relative;
+}
+
+.containerImgc2 h2 {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgc3 {
+    background: url("img/imgFolklore/imgComidas/imagenc4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 442px;
+    height: 427px;
+    margin-left: 12px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.containerImgc3 h2 {
+    position: absolute;
+    top: 85%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgc4 {
+    background: url("img/imgFolklore/imgComidas/imagenc5.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 840px;
+    height: 427px;
+    border-radius: 3px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.containerImgc4 h2 {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerS {
+    background: #ffffff;
+}
+
+.containerImgc5 img {
+    width: 652px;
+    height: 292px;
+    margin-left: 11px;
+}
+
+.containerImgc6 img {
+    width: 652px;
+    height: 292px;
+    margin-left: -11px;
+}
+
+.parrafo1 p {
+    margin-left: 10px;
+    margin-right: 75px;
+}
+
+/* Termina sección comidas */
+
+/* Inicia sección Grupos étnicos */
+.containerImgg {
+    background-image: url("img/imgFolklore/imgGrupos/imageng1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-right: -116px;
+    margin-left: -117px;
+    position: relative;
+}
+
+.containerImgg h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImgg1 {
+    background: url("img/imgFolklore/imgGrupos/imageng2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 840px;
+    height: 427px;
+    margin-left: 12px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.containerImgg1 h2 {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgg2 {
+    background: url("img/imgFolklore/imgGrupos/imageng3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 442px;
+    height: 427px;
+    border-radius: 3px;
+    margin-left: -25px;
+    position: relative;
+}
+
+.containerImgg2 h2 {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgg3 {
+    background: url("img/imgFolklore/imgGrupos/imageng4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 442px;
+    height: 427px;
+    margin-left: 12px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.containerImgg3 h2 {
+    position: absolute;
+    top: 85%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgg4 {
+    background: url("img/imgFolklore/imgGrupos/imageng5.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 840px;
+    height: 427px;
+    border-radius: 3px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.containerImgg4 h2 {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 45px;
+    text-align: left;
+    z-index: 1;
+}
+
+.containerImgg5 img {
+    width: 467px;
+    height: 342px;
+}
+
+.containerfondo {
+    margin-top: -290px;
+    margin-left: 70px;
+    width: 471px;
+    height: 314px;
+    background: #d9d9d9;
+}
+
+.containerfondo1 {
+    margin-top: -290px;
+    margin-left: 109px;
+    width: 471px;
+    height: 314px;
+    background: #d9d9d9;
+}
+
+.parrafov1 p {
+    margin-left: 55px;
+    margin-right: 50px;
+}
+
+.containerImgg6 {
+    background-image: url("img/imgFolklore/imgGrupos/imageng8.jpg");
+    background-size: cover;
+    background-position: center;
+    /* height: 100%; */
+    width: 100%;
+    height: 491px;
+    border-radius: 3px;
+    /* margin-right: -20px;
+    margin-left: -20px; */
+    position: relative;
+}
+
+.containerImgg6 p {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    text-align: center;
+    background-color: #221b1b;
+    width: 422px;
+    height: 200px;
+    padding: 15px;
+    z-index: 1;
+}
+
+/* Termina sección Grupos etnicos */
+
+/* Inicia sección Arquitectura popular */
+.containerImgp {
+    background-image: url("img/imgFolklore/imgArquitectura/imagenp1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-right: -116px;
+    margin-left: -117px;
+    position: relative;
+}
+
+.containerImgp h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    /* Color de texto deseado */
+    font-size: 50px;
+    text-align: center;
+    z-index: 1;
+}
+
+.containerImgp1 img {
+    background-size: cover;
+    background-position: center;
+    /* height: 100%; */
+    width: 362px;
+    height: 372px;
+    border-radius: 52px;
+    /* margin-right: -20px;
+    margin-left: -20px; */
+    position: relative;
+}
+
+/* Termina sección Arquitectura popular */
+
+/* --------------------------------Termina pagina Folclore------------------------------------------------ */
+
+/*--------------------------------Realizaciones------------------------------------*/
+.background-image-centroscyt {
+    background-image: url("img/imgRealizaciones/centroscyt.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.background-image-agrop {
+    background-image: url("img/imgRealizaciones/agro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.background-image-mineria {
+    background-image: url("img/imgRealizaciones/mineria.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.background-image-industria {
+    background-image: url("img/imgRealizaciones/industria.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.background-image-artetec {
+    background-image: url("img/imgRealizaciones/ArteTecnica/artetec.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+/*
+.anchoCompleto {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+/*
+    height: 700; /* Reemplaza "300px" con la altura deseada */
+/*
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+/*
+    overflow: hidden; /* Ocultar contenido que exceda la altura fija */
+/*
+}
+
+.carousel-inner {
+    height: 50%; /* Establecer la altura del carrusel interno al 100% */
+/*
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: cover; /* Ajustar las imágenes para que cubran toda la altura del carrusel */
+/*
+    height: 20%; /* Establecer la altura de las imágenes al 100% del carrusel */
+/*
+    width: 100%; /* Ajustar el ancho de las imágenes al 100% del carrusel */
+/*
+}*/
+
+
+/*--------------------------------Fin Realizaciones------------------------------------------------*/
+
+/*---------------------------------Museos----------------------------------------------------------*/
+
+.background-image-ruinas {
+    background-image: url("img/imgMuseos/imgRuinas/ruinas.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.background-lhistoricos {
+    background-image: url("img/imgMuseos/imgLhistoricos/historicos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+.background-arte {
+    background-image: url("img/imgMuseos/imgArte/arte.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 43%;
+    /* Establece la relación de aspecto de la imagen */
+}
+
+/*---------------------------------Fin Museos------------------------------------------------------*/
+
+/*----------------------------------Footer-------------------------------------*/
+footer {
+    background-color: #1d1d1d;
+}
+
+.margen {
+    margin-top: 100px;
+}
+
+.footerEnlaces a {
+    text-decoration: none;
+
+}
+
+.footerRedes img {
+    width: 30px;
+}
+
+/*------------------Fin Footer------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Sitios / Montañas */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Inicia Header */
+header {
+    position: relative;
+    text-align: center;
+}
+
+.contenedorHeaderImagen {
+    position: relative;
+}
+
+.contenedorHeaderImagen img {
+    width: 100%;
+    height: 700px;
+}
+
+.contenedorHeaderImagen h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Inicia main */
+
+.containerCardGaleria {
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.containerCardGaleria img {
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-radius: 6px;
+}
+
+.containerCardGaleria .col a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.containerCardGaleria .col a:hover {
+    transform: scale(1.05);
+}
+
+
+.image-link {
+    display: inline-block;
+    position: relative;
+}
+
+.imgTransparente {
+    transition: opacity 0.3s ease;
+}
+
+
+.image-link:hover .imgTransparente {
+    opacity: 0.5;
+}
+
+
+/* Muestre texto*/
+
+.containerCardGaleria .col {
+    position: relative;
+}
+
+.containerTextoCard {
+    color: #ffffff;
+    font-size: 1.2;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    /* Posiciona el contenedor en la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+    /* Agrega la transición para el movimiento vertical */
+}
+
+.col:hover .containerTextoCard {
+    top: 50%;
+    /* Mueve el contenedor hacia abajo, centrado verticalmente */
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    /* Ajusta el centrado vertical */
+}
+
+
+/* Inicia 3ra sección carrousel  */
+
+.carouselTamaño h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.colorBackground {
+    background-color: #faf7f2;
+    padding: 5px;
+}
+
+/* Termina main */
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* Sitios / Costas */
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+.sectionMargin {
+    margin-top: 30px;
+}
+
+.imgCentro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgGrillas {
+    width: 100%;
+    height: auto;
+}
+
+.tamanoImgGrilla {
+    height: 580px;
+    width: 100%;
+
+}
+
+.tamanoImgGaleria {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+
+.imgDatos {
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.textoJustificado {
+    text-align: justify;
+}
+
+.contenedorCards img {
+    border-radius: 7px;
+}
+
+section h3 {
+    font-weight: 600;
+}
+
+.sectionMargin img {
+    border-radius: 8px;
+}
+
+/* Segunda version */
+.containerCardGaleriaN {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.containerCardGaleriaN img {
+    width: 290px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-radius: 6px;
+}
+
+.containerCardGaleriaN .col a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.containerCardGaleriaN .col a:hover {
+    transform: scale(1.05);
+}
+
+/* Muestre texto*/
+
+.containerCardGaleriaN .col {
+    position: relative;
+}
+
+/* Termina segunda versión */
+
+/* Tercera version */
+.containerCardGaleriaT {
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.containerCardGaleriaT img {
+    width: 330px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-radius: 6px;
+}
+
+.containerCardGaleriaT .col a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.containerCardGaleriaT .col a:hover {
+    transform: scale(1.05);
+}
+
+/* Muestre texto*/
+
+.containerCardGaleriaT .col {
+    position: relative;
+}
+
+/* Termina tercera version */
+
+#miContenedor {
+    width: 500px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Estilo para recortar solo la altura de las imágenes en el carrusel */
+.carousel-item img {
+    max-height: 550px; /* Ajusta este valor según la altura deseada */
+    width: auto; /* Establece el ancho a "auto" para mantener la relación de aspecto */
+    margin: 0 auto; /* Centra las imágenes horizontalmente dentro del carrusel */
+    object-fit: cover; /* Recorta la imagen manteniendo su relación de aspecto */
+}
+
+/* Estilo adicional para centrar los indicadores y controles del carrusel */
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+    margin: auto;
+    width: fit-content;
+}
